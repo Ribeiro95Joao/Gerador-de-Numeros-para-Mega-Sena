@@ -10,7 +10,7 @@ public class Gerador {
                 }
         Collections.shuffle(numerosDisponiveis);
         for(int i = 0; i < 6; i++){
-            numerosSorteados[i] = numerosDisponiveis.get(i);
+            this.numerosSorteados[i] = numerosDisponiveis.get(i);
         }
     }
 
@@ -19,9 +19,9 @@ public class Gerador {
     }
 
     public void exibir(){
-        Arrays.sort(numerosSorteados);
-        for(Integer i = 0; i < numerosSorteados.length; i++){
-            System.out.print(numerosSorteados[i] + ", ");
+        Arrays.sort(this.numerosSorteados);
+        for(Integer i = 0; i < this.numerosSorteados.length; i++){
+            System.out.print(this.numerosSorteados[i] + ", ");
         }
     }
 }
